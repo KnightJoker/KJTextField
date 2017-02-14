@@ -10,6 +10,7 @@
 
 @implementation ShockTextField
 
+#pragma mark - init
 
 - (instancetype)init {
     return [self initWithFrame:CGRectZero];
@@ -55,16 +56,7 @@
     
     
     // Todo HUNI animation's work
-//    
-//    [UIView animateWithDuration:0.1
-//                          delay:0.0
-//                        options:UIViewAnimationOptionShowHideTransitionViews | UIViewAnimationOptionCurveEaseIn
-//                     animations:^(){
-//                         self.layer.borderWidth = 10.0f;
-//                     } completion:^(BOOL finished){
-//                     
-//                         self.layer.borderWidth = 0.0f;
-//                     }];
+
 }
 
 - (void)runDidEndAnimation {

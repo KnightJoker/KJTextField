@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "ShockTextField.h"
+#import "MoveTextField.h"
 
 @interface ViewController ()
 
@@ -31,15 +31,20 @@
 
 - (void)setupView {
 
-    ShockTextField *textField = [[ShockTextField alloc] initWithFrame:CGRectMake(100, 200, 200, 30)];
-    textField.backgroundColor = [UIColor yellowColor];
+    MoveTextField *textField = [[MoveTextField alloc] initWithFrame:CGRectMake(100, 200, 200, 30)];
+    textField.placeholder = @"Name";
+//    textField.backgroundColor = [UIColor yellowColor];
+//    textField.lineColor = [UIColor greenColor];
     [self.view addSubview:textField];
     
-    
-    
-    ShockTextField *textField_0 = [[ShockTextField alloc] initWithFrame:CGRectMake(100, 400, 200, 30)];
-    textField_0.backgroundColor = [UIColor yellowColor];
+    UITextField *textField_0 = [[UITextField alloc] initWithFrame:CGRectMake(100, 500, 200, 30)];
+    textField_0.backgroundColor = [UIColor greenColor];
     [self.view addSubview:textField_0];
+    
+    
+//    StandTextField *textField_0 = [[StandTextField alloc] initWithFrame:CGRectMake(100, 400, 200, 30)];
+//    textField_0.backgroundColor = [UIColor yellowColor];
+//    [self.view addSubview:textField_0];
     
 }
 

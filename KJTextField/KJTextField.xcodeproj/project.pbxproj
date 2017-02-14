@@ -16,6 +16,8 @@
 		2274EA901E51931500EA151B /* KJTextFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2274EA8F1E51931500EA151B /* KJTextFieldTests.m */; };
 		2274EA9B1E51931500EA151B /* KJTextFieldUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2274EA9A1E51931500EA151B /* KJTextFieldUITests.m */; };
 		2274EAAB1E5193CE00EA151B /* ShockTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2274EAAA1E5193CE00EA151B /* ShockTextField.m */; };
+		2274EAB01E52D81700EA151B /* StandTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2274EAAF1E52D81700EA151B /* StandTextField.m */; };
+		2274EAB31E52EDCC00EA151B /* MoveTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2274EAB21E52EDCC00EA151B /* MoveTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		2274EA9C1E51931500EA151B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2274EAA91E5193CE00EA151B /* ShockTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShockTextField.h; sourceTree = "<group>"; };
 		2274EAAA1E5193CE00EA151B /* ShockTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShockTextField.m; sourceTree = "<group>"; };
+		2274EAAE1E52D81700EA151B /* StandTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandTextField.h; sourceTree = "<group>"; };
+		2274EAAF1E52D81700EA151B /* StandTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StandTextField.m; sourceTree = "<group>"; };
+		2274EAB11E52EDCC00EA151B /* MoveTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveTextField.h; sourceTree = "<group>"; };
+		2274EAB21E52EDCC00EA151B /* MoveTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +155,10 @@
 			children = (
 				2274EAA91E5193CE00EA151B /* ShockTextField.h */,
 				2274EAAA1E5193CE00EA151B /* ShockTextField.m */,
+				2274EAAE1E52D81700EA151B /* StandTextField.h */,
+				2274EAAF1E52D81700EA151B /* StandTextField.m */,
+				2274EAB11E52EDCC00EA151B /* MoveTextField.h */,
+				2274EAB21E52EDCC00EA151B /* MoveTextField.m */,
 			);
 			name = TextFielEffects;
 			path = KJTextField/TextFielEffects;
@@ -288,6 +298,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2274EAAB1E5193CE00EA151B /* ShockTextField.m in Sources */,
+				2274EAB01E52D81700EA151B /* StandTextField.m in Sources */,
+				2274EAB31E52EDCC00EA151B /* MoveTextField.m in Sources */,
 				2274EA7D1E51931400EA151B /* ViewController.m in Sources */,
 				2274EA7A1E51931400EA151B /* AppDelegate.m in Sources */,
 				2274EA771E51931400EA151B /* main.m in Sources */,
@@ -520,6 +532,7 @@
 				2274EAA11E51931500EA151B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2274EAA21E51931500EA151B /* Build configuration list for PBXNativeTarget "KJTextFieldTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +541,7 @@
 				2274EAA41E51931500EA151B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2274EAA51E51931500EA151B /* Build configuration list for PBXNativeTarget "KJTextFieldUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +550,7 @@
 				2274EAA71E51931500EA151B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
