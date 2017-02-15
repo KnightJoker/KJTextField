@@ -8,11 +8,11 @@ And i will finish this work when i was free.So the progress may be slower，yet 
 </br>
 # The effects already finished
 
-### moveTextField
+### MoveLineTextField
 
 ![](./Screenshots/moveTextField.gif)
 
-### magicTextField
+### MagicLineTextField
 
 ![](./Screenshots/magicTextField.gif)
 
