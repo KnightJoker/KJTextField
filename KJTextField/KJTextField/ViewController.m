@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "MoveTextField.h"
+#import "MagicLineTextField.h"
+#import "MoveLineTextField.h"
 
 @interface ViewController ()
 
@@ -31,14 +32,16 @@
 
 - (void)setupView {
 
-    MoveTextField *textField = [[MoveTextField alloc] initWithFrame:CGRectMake(100, 200, 200, 30)];
+    MagicLineTextField *textField = [[MagicLineTextField alloc] initWithFrame:CGRectMake(100, 200, 200, 30)];
     textField.placeholder = @"Name";
 //    textField.backgroundColor = [UIColor yellowColor];
 //    textField.lineColor = [UIColor greenColor];
+//    textField.placeHolderColor = [UIColor yellowColor];
     [self.view addSubview:textField];
     
-    UITextField *textField_0 = [[UITextField alloc] initWithFrame:CGRectMake(100, 500, 200, 30)];
-    textField_0.backgroundColor = [UIColor greenColor];
+    MoveLineTextField *textField_0 = [[MoveLineTextField alloc] initWithFrame:CGRectMake(100, 500, 200, 30)];
+//    textField_0.backgroundColor = [UIColor greenColor];
+    textField_0.placeholder = @"Address";
     [self.view addSubview:textField_0];
     
     

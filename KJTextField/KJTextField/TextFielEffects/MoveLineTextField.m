@@ -1,21 +1,21 @@
 //
-//  MoveTextField.m
+//  MoveLineTextField.m
 //  KJTextField
 //
 //  Created by Huni on 17/2/14.
 //  Copyright © 2017年 KnightJoker. All rights reserved.
 //
 
-#import "MoveTextField.h"
+#import "MoveLineTextField.h"
 
-@interface MoveTextField ()
+@interface MoveLineTextField ()
 
 @property (strong, nonatomic) UILabel *placeHolderLabel;
 @property (strong, nonatomic) UIView *bottomLineView;
 
 @end
 
-@implementation MoveTextField
+@implementation MoveLineTextField
 
 #pragma mark - init
 
