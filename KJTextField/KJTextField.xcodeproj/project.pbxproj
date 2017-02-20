@@ -19,6 +19,7 @@
 		2274EAB01E52D81700EA151B /* StandTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2274EAAF1E52D81700EA151B /* StandTextField.m */; };
 		2274EAB31E52EDCC00EA151B /* MoveLineTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2274EAB21E52EDCC00EA151B /* MoveLineTextField.m */; };
 		2274EAB71E53FDC600EA151B /* MagicLineTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2274EAB61E53FDC600EA151B /* MagicLineTextField.m */; };
+		22ABADAD1E57185500F33344 /* MagicImageTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 22ABADAC1E57185500F33344 /* MagicImageTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		2274EAB21E52EDCC00EA151B /* MoveLineTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveLineTextField.m; sourceTree = "<group>"; };
 		2274EAB51E53FDC600EA151B /* MagicLineTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicLineTextField.h; sourceTree = "<group>"; };
 		2274EAB61E53FDC600EA151B /* MagicLineTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicLineTextField.m; sourceTree = "<group>"; };
+		22ABADAB1E57185500F33344 /* MagicImageTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicImageTextField.h; sourceTree = "<group>"; };
+		22ABADAC1E57185500F33344 /* MagicImageTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicImageTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +167,8 @@
 				2274EAB21E52EDCC00EA151B /* MoveLineTextField.m */,
 				2274EAB51E53FDC600EA151B /* MagicLineTextField.h */,
 				2274EAB61E53FDC600EA151B /* MagicLineTextField.m */,
+				22ABADAB1E57185500F33344 /* MagicImageTextField.h */,
+				22ABADAC1E57185500F33344 /* MagicImageTextField.m */,
 			);
 			name = TextFielEffects;
 			path = KJTextField/TextFielEffects;
@@ -307,6 +312,7 @@
 				2274EAB01E52D81700EA151B /* StandTextField.m in Sources */,
 				2274EAB31E52EDCC00EA151B /* MoveLineTextField.m in Sources */,
 				2274EA7D1E51931400EA151B /* ViewController.m in Sources */,
+				22ABADAD1E57185500F33344 /* MagicImageTextField.m in Sources */,
 				2274EA7A1E51931400EA151B /* AppDelegate.m in Sources */,
 				2274EA771E51931400EA151B /* main.m in Sources */,
 			);
