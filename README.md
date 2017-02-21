@@ -16,3 +16,8 @@ And i will finish this work when i was free.So the progress may be slower，yet 
 
 ![](./Screenshots/magicTextField.gif)
 
+### MagicImageTextField
+
+</br>
+
+![](./Screenshots/MagicImageTextField.gif)
