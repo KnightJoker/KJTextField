@@ -45,7 +45,8 @@
     textField_0.placeholder = @"Address";
     
     UIImage *image = [[UIImage alloc] init];
-    image = [UIImage imageNamed:@"ic_finish_ success"];
+    image = [UIImage imageNamed:@"ic_finish_ waiting"];
+    
     textField_0.placeHolderImage = image;
     [self.view addSubview:textField_0];
     

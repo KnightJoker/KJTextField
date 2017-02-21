@@ -8,7 +8,7 @@
 
 #import "MagicImageTextField.h"
 
-@interface MagicImageTextField ()
+@interface MagicImageTextField () <UITextFieldDelegate>
 
 @property (strong, nonatomic) UITextField *textField;
 @property (strong, nonatomic) UILabel *placeHolderLabel;
@@ -63,8 +63,8 @@
 - (void)setPlaceHolderImage:(UIImage *)placeHolderImage {
 
     _placeHolderImageView = [[UIImageView alloc] initWithFrame:CGRectMake(-CGRectGetWidth(self.bounds) / 5, 0, CGRectGetWidth(self.bounds) / 5,CGRectGetHeight(self.bounds))];
-    _placeHolderImageView.image = _placeHolderImage;
-    _placeHolderImageView.contentMode = UIViewContentModeScaleAspectFill;
+    _placeHolderImageView.image = placeHolderImage;
+    _placeHolderImageView.contentMode = UIViewContentModeScaleAspectFit;
     
     [self addSubview:_placeHolderImageView];
     
@@ -78,17 +78,30 @@
     self.userInteractionEnabled = YES;
  
     
-    _textField = [[UITextField alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.bounds) / 5, 0, CGRectGetWidth(self.bounds) * 4 / 5, CGRectGetHeight(self.bounds))];
-    
+    _textField = [[UITextField alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.bounds) / 5 + 4, 0, CGRectGetWidth(self.bounds) * 4 / 5, CGRectGetHeight(self.bounds))];
     [self addSubview:_textField];
+    [_textField addTarget:self action:@selector(textFieldDidEndEditing:) forControlEvents:UIControlEventEditingDidEnd];
 
 }
 
 #pragma mark - events
 
 - (void)placeHolderLabelDidClick:(id)sender {
-
+    
+    _placeHolderImageView.hidden = NO;
+    [_textField becomeFirstResponder];
     [self runDidBeginAnimation];
+}
+
+#pragma mark - textField delegate
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+
+    if ([_textField.text isEqualToString:@""]) {
+        
+        _placeHolderLabel.hidden = NO;
+        [self runDidEndAnimation];
+    }
 }
 
 #pragma mark - animation
@@ -117,6 +130,23 @@
 
 
 - (void)runDidEndAnimation {
+    
+    [UIView animateWithDuration:0.3
+                          delay:0.0
+                        options:UIViewAnimationOptionCurveEaseOut
+                     animations:^(){
+                         _placeHolderLabel.frame = CGRectMake(0, 0, CGRectGetWidth(self.bounds),CGRectGetHeight(self.bounds));
+                         
+                     } completion:nil];
+    [UIView animateWithDuration:0.3
+                          delay:0.0
+                        options:UIViewAnimationOptionCurveEaseIn
+                     animations:^(){
+                         _placeHolderImageView.frame = CGRectMake(-CGRectGetWidth(self.bounds) / 5, 0, CGRectGetWidth(self.bounds) / 5,CGRectGetHeight(self.bounds));
+                         
+                     } completion:^(BOOL finish){
+                         _placeHolderImageView.hidden = YES;
+                     }];
 
     
 }
