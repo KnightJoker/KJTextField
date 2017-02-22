@@ -110,7 +110,7 @@
 
     [UIView animateWithDuration:0.3
                           delay:0.0
-                        options:UIViewAnimationOptionCurveEaseIn
+                        options:UIViewAnimationOptionCurveLinear
                      animations:^(){
                          _placeHolderLabel.frame = CGRectMake(CGRectGetWidth(self.bounds) / 5, 0, CGRectGetWidth(self.bounds),CGRectGetHeight(self.bounds));
                      
@@ -120,7 +120,7 @@
     
     [UIView animateWithDuration:0.3
                           delay:0.0
-                        options:UIViewAnimationOptionCurveEaseOut
+                        options:UIViewAnimationOptionCurveLinear
                      animations:^(){
                          _placeHolderImageView.frame = CGRectMake(0, 0, CGRectGetWidth(self.bounds) / 5,CGRectGetHeight(self.bounds));
                          
@@ -133,14 +133,14 @@
     
     [UIView animateWithDuration:0.3
                           delay:0.0
-                        options:UIViewAnimationOptionCurveEaseOut
+                        options:UIViewAnimationOptionCurveLinear
                      animations:^(){
                          _placeHolderLabel.frame = CGRectMake(0, 0, CGRectGetWidth(self.bounds),CGRectGetHeight(self.bounds));
                          
                      } completion:nil];
     [UIView animateWithDuration:0.3
                           delay:0.0
-                        options:UIViewAnimationOptionCurveEaseIn
+                        options:UIViewAnimationOptionCurveLinear
                      animations:^(){
                          _placeHolderImageView.frame = CGRectMake(-CGRectGetWidth(self.bounds) / 5, 0, CGRectGetWidth(self.bounds) / 5,CGRectGetHeight(self.bounds));
                          

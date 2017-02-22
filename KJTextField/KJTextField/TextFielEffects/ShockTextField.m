@@ -8,6 +8,15 @@
 
 #import "ShockTextField.h"
 
+@interface ShockTextField ()
+
+@property (strong, nonatomic) UIView *leftLineView;
+@property (strong, nonatomic) UIView *bottomLineView;
+@property (strong, nonatomic) UIView *rightLineView;
+@property (strong, nonatomic) UIView *topLineView;
+
+@end
+
 @implementation ShockTextField
 
 #pragma mark - init
@@ -39,7 +48,7 @@
 - (void)textFieldEdittingDidBeginInternal:(UITextField *)sender {
     
     self.layer.borderColor = [UIColor greenColor].CGColor;
-    self.layer.borderWidth = 2.0f;
+    self.layer.borderWidth = 1.0f;
     [self runDidBeginAnimation];
 }
 

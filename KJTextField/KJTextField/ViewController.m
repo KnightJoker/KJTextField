@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "MagicLineTextField.h"
+#import "ShockTextField.h"
 #import "MagicImageTextField.h"
 
 @interface ViewController ()
@@ -32,7 +32,7 @@
 
 - (void)setupView {
 
-    MagicLineTextField *textField = [[MagicLineTextField alloc] initWithFrame:CGRectMake(100, 200, 200, 30)];
+    ShockTextField *textField = [[ShockTextField alloc] initWithFrame:CGRectMake(100, 200, 200, 30)];
     textField.placeholder = @"Name";
 //    textField.userInteractionEnabled = NO;
 //    textField.backgroundColor = [UIColor yellowColor];
@@ -42,7 +42,7 @@
     
     MagicImageTextField *textField_0 = [[MagicImageTextField alloc] initWithFrame:CGRectMake(100, 500, 200, 30)];
 //    textField_0.backgroundColor = [UIColor greenColor];
-    textField_0.placeholder = @"Address";
+    textField_0.placeholder = @"Time";
     
     UIImage *image = [[UIImage alloc] init];
     image = [UIImage imageNamed:@"ic_finish_ waiting"];

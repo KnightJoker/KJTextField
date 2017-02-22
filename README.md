@@ -20,4 +20,4 @@ And i will finish this work when i was free.So the progress may be slower，yet 
 
 </br>
 
-![](./Screenshots/MagicImageTextField.gif)
+![](./Screenshots/magicImageTextField.gif)
