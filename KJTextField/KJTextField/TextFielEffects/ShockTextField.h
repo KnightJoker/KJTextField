@@ -10,4 +10,6 @@
 
 @interface ShockTextField : UITextField
 
+@property (strong, nonatomic) UIColor *borderColor;
+
 @end

@@ -38,6 +38,7 @@
 //    textField.backgroundColor = [UIColor yellowColor];
 //    textField.lineColor = [UIColor greenColor];
 //    textField.placeHolderColor = [UIColor yellowColor];
+    textField.borderColor = [UIColor yellowColor];
     [self.view addSubview:textField];
     
     MagicImageTextField *textField_0 = [[MagicImageTextField alloc] initWithFrame:CGRectMake(100, 500, 200, 30)];
