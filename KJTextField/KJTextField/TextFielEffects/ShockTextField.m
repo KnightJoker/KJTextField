@@ -9,7 +9,7 @@
 #import "ShockTextField.h"
 
 
-static const NSInteger animationTime = 0.3;
+static const NSInteger animationTime = 0.4;
 
 @interface ShockTextField ()
 
@@ -50,8 +50,7 @@ static const NSInteger animationTime = 0.3;
 
 - (void)textFieldEdittingDidBeginInternal:(UITextField *)sender {
     
-    self.layer.borderColor = _borderColor.CGColor;
-    self.layer.borderWidth = 1.0f;
+
     
     _topLineView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.bounds), 1)];
     _topLineView.backgroundColor = _borderColor;
@@ -76,8 +75,6 @@ static const NSInteger animationTime = 0.3;
 
 - (void)textFieldEdittingDidEndInternal:(UITextField *)sender {
 
-    self.layer.borderColor = [UIColor clearColor].CGColor;
-    self.layer.borderWidth = 0.0f;
     [_topLineView removeFromSuperview];
     [_bottomLineView removeFromSuperview];
     [_leftLineView removeFromSuperview];
@@ -97,7 +94,7 @@ static const NSInteger animationTime = 0.3;
     CABasicAnimation *animationWidthTop = [CABasicAnimation animation];
     animationWidthTop.keyPath = @"bounds.size.width";
     animationWidthTop.fromValue = @(CGRectGetWidth(self.bounds));
-    animationWidthTop.toValue = @(CGRectGetWidth(self.bounds) + 10);
+    animationWidthTop.toValue = @(CGRectGetWidth(self.bounds) + 14);
     
     CAAnimationGroup *animationGroup = [CAAnimationGroup animation];
     animationGroup.animations = [NSArray arrayWithObjects:animationYTop, animationWidthTop, nil];
@@ -124,7 +121,7 @@ static const NSInteger animationTime = 0.3;
     CABasicAnimation *animationXHeight = [CABasicAnimation animation];
     animationXHeight.keyPath = @"bounds.size.height";
     animationXHeight.fromValue = @(CGRectGetHeight(self.bounds));
-    animationXHeight.toValue = @(CGRectGetHeight(self.bounds) + 16);
+    animationXHeight.toValue = @(CGRectGetHeight(self.bounds) + 18);
     
     CAAnimationGroup *animationGroup2 = [CAAnimationGroup animation];
     animationGroup2.animations = [NSArray arrayWithObjects:animationXLeft,animationXHeight, nil];
@@ -142,6 +139,7 @@ static const NSInteger animationTime = 0.3;
     animationGroup3.duration = animationTime;
     
     [_rightLineView.layer addAnimation:animationGroup3 forKey:@"basic_right"];
+    
     
 }
 
